@@ -209,43 +209,43 @@ input[type=submit]:hover {
 
 /*Assign banner images*/
 .index-back-img1 {
-	background-image: url("../img/flower_bath_blue.png");
+	background-image: url("../img/flower_bath_blue.jpg");
 }
 
 .index-back-img2 {
-	background-image: url("../img/hands_paint_green.png");
+	background-image: url("../img/hands_paint_green.jpg");
 }
 
 .index-back-img3 {
-	background-image: url("../img/woman_sunrise_blue.png");
+	background-image: url("../img/woman_sunrise_blue.jpg");
 }
 
 .about-back-img1 {
-	background-image: url("../img/cleaning_sink_white.png");
+	background-image: url("../img/cleaning_sink_white.jpg");
 }
 
 .about-back-img2 {
-	background-image: url("../img/wood_spoon_green.png");
+	background-image: url("../img/wood_spoon_green.jpg");
 }
 
 .about-back-img3 {
-	background-image: url("../img/puddle_stomp_blue.png");
+	background-image: url("../img/puddle_stomp_blue.jpg");
 }
 
 .contact-back-img1 {
-	background-image: url("../img/woman_sunrise_blue.png");
+	background-image: url("../img/woman_sunrise_blue.jpg");
 }
 
 .contact-back-img2 {
-	background-image: url("../img/adventure_green.png");	
+	background-image: url("../img/adventure_green.jpg");	
 }
 
 .sets-back-img1 {
-	background-image: url("../img/affection_bedroom_blue.png");
+	background-image: url("../img/affection_bedroom_blue.jpg");
 }
 
 .sets-back-img2 {
-	background-image: url("../img/couple_nature_green.png");
+	background-image: url("../img/couple_nature_green.jpg");
 }
 
 .sets-back-img3 {
@@ -253,19 +253,19 @@ input[type=submit]:hover {
 }
 
 .soaps-back-img1 {
-	background-image: url("../img/soaps/rose_sunlight_blue.png");
+	background-image: url("../img/soaps/rose_sunlight_blue.jpg");
 }
 
 .soaps-back-img2 {
-	background-image: url("../img/soaps/oat_lav_green.png");
+	background-image: url("../img/soaps/oat_lav_green.jpg");
 }
 
 .soaps-back-img3 {
-	background-image: url("../img/soaps/char_blue.png");
+	background-image: url("../img/soaps/char_blue.jpg");
 }
 
 .soaps-back-img4 {
-	background-image: url("../img/soaps/soap_bars_white.png");
+	background-image: url("../img/soaps/soap_bars_white.jpg");
 }
 
 /*Position and format product summary tables*/
@@ -591,5 +591,3 @@ On the index.html banner 1 section */
 		margin: 34px 34px 0 34px; 
 	}
 }
-
-
