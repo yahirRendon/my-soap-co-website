@@ -1,0 +1,137 @@
+<!-- Contact Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Browser compat -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<!-- Website Title -->
+	<title>MY Soap Co.</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+  	<!-- [If lt IE 9]
+  		script src="//html5shiv.gogglecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to style.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<!-- Link to Roboto Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet"> 
+	<!-- Link to javascript line 1 -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		
+		<!-- Navigation Bar with Navigation Image and dropdown menus -->
+		<div class="nav-img">
+			<nav>
+				<ul class="navbar">
+					<div class="dropdown-main">
+						<a class="dropbtn-main" ><img id="menu-icon" onclick="showHideNav()" src="img/logo/menu_white.png"></a>
+						<div class="dropdown-main-content">
+							<li id="nav-home"><a  href="index.html">HOME</a></li>
+							<div class="dropdown-sub">
+								<li><a class="dropbtn-sub" href="soaps.html">SOAP</a></li>
+								<div class="dropdown-sub-content">
+									<a onclick="location.href='soaps.html#shea_rose_link'">ROSE</a>
+									<a onclick="location.href='soaps.html#oat_lavender_link'">LAVENDER</a>
+									<a onclick="location.href='soaps.html#charcoal_link'">CHARCOAL</a>
+								</div>
+							</div>
+							<li><a href="sets.html">SETS</a></li>
+							<a class="logo-img" href="index.html"><img id="logo" src="img/logo/logo_three_purple.png"></a>
+							<div class="dropdown-sub">
+								<li><a class="dropbtn-sub" href="about.html">ABOUT</a></li>
+								<div class="dropdown-sub-content">
+									<a onclick="location.href='about.html#purpose_link'">PURPOSE</a>
+									<a onclick="location.href='about.html#defense_link'">DEFENSE</a>
+									<a onclick="location.href='about.html#growth_link'">GROWTH</a>
+								</div>
+							</div>
+							<li><a style="color: #840fb3;" href="contact.html">CONTACT</a></li>
+						</div>
+					</div>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Banner Image 1 with Bold Text -->
+	<div class="contact-back-img1">
+		<div class="back-text">
+			<span class="border">
+				find us
+			</span>
+		</div>
+	</div>
+
+	<!-- Banner Body Text 1 -->
+	<section class="section section-dark">
+		<h2>MY Soap Co.</h2>
+		<p style="text-decoration: none" class="para-text">
+			318 E. Holly St.<br>
+			Bellingham, WA 98225
+			<br><br>
+			Phone: 360-283-2233
+			<br><br>
+			Hours: Monday - Friday<br>
+			10:00am - 6:00pm
+		</p>
+	</section>
+
+	<!-- Banner Image 2 with Bold Text -->
+	<div class="contact-back-img2">
+		<div class="back-text">
+			<span class="border">
+				reach us 
+			</span>
+		</div>
+	</div>
+
+	<!-- Banner Body Text 2 - Form -->
+	<!-- Input form with dropdown list per rubric -->
+	<section id="end-section" class="section section-alt">
+		<div class="contact-form-div">
+		  	<form action="action_page.php">
+		  		<!-- First Name Input -->
+			    <label for="fname">First Name</label>
+			    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+			    <!-- Last Name Input -->
+			    <label for="lname">Last Name</label>
+			    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+			    <!-- Email Input -->
+			    <label for="email">Email</label>
+			    <input type="email" id="email" name="emailaddress" placeholder="you_are_beautiful@love.com">
+			    <!-- Product Drop-down Input -->
+			    <label for="product">Product</label>
+			    <select id="product" name="product">
+			     	<option value="shea_rose">Shea Rose Soap</option>
+					<option value="oat_lavender">Oat Lavender Soap</option>
+					<option value="charcoal">Charcoal Soap</option>
+					<option value="warm_set">Warm Set</option>
+					<option value="cool_set">Cool Set</option>
+					<option value="other">Other</option>
+			    </select>
+			    <!-- Submit Button Section -->
+			    <label for="comments-questions">Comments and Questions</label>
+			    <textarea id="comments-questions" name="comments-questions" placeholder="How can we help..."></textarea>
+			    <input type="submit" value="Submit">
+		  	</form>
+		</div>
+	</section>
+
+	<!-- Footer Section with Image and Bold Text -->
+	<footer class="nav-img">
+		<div class="back-text">
+			<span class="border">
+				MY Soap Co.
+				<p id="slogan-text">life done well is dirty</p>
+			</span>
+		</div>
+	</footer>
+
+</body>
+</html>

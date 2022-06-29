@@ -1,0 +1,595 @@
+/*
+ set the styling of the pages
+*/
+
+/*Global variables*/
+:root {
+    --white-color: #F7F9FB;
+    --purple-color: #840fb3;
+    --blue-light-color: #8FC1E3;
+    --blue-medium-color: #5085A5;
+    --blue-dark-color: #31708E;
+    --green-color: #687864;    
+}
+
+/*Default attributes assigned to all elements*/
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*=========================================
+    Main Styles
+=========================================*/
+
+body, html {
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	line-height: 1.8em;
+	background-color: var(--white-color);
+}
+
+/*Remove margin and padding from nav element*/
+nav {
+	margin: 0;
+	padding: 0;
+}
+
+/*Set the standard section style*/
+section h2, section p {
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+/*Set table data style*/
+td {
+	min-width: 100px;
+	max-width: 220px;
+}
+
+/*Contact form input style*/
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/*Contact submit style*/
+input[type=submit] {
+    background-color: rgba(132, 15, 179, .7);
+	padding: 8px 44px;
+	font-size: 20px;
+    color: var(--white-color);
+    /*padding: 12px 20px;*/
+    border: 1px solid var(--purple-color);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/*Submit button hover*/
+input[type=submit]:hover {
+    background-color: var(--purple-color);
+}
+
+
+/*=========================================
+	Class Styles
+ =========================================*/
+
+/*Top level navabar class */
+.navbar {
+	margin: 0;
+	padding: 0;
+	height: 300px;
+	list-style-type: none;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*Style main drop-down elements*/
+.dropdown-main-content {
+  display: inline;
+}
+
+.navbar li {
+	display: inline;
+	margin: 10px 10px;
+	padding: 10px 30px;
+	font-weight: 500;
+	color: var(--white-color);
+}
+
+.navbar li a {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--white-color);
+	text-decoration: none;
+}
+
+/*change text color on hoover*/
+.navbar li:hover {
+	color: var(--purple-color);
+	border-bottom: 1px solid var(--purple-color);
+}
+
+/*change text color on hoover*/
+.navbar li:hover a {
+	color: var(--purple-color);
+}
+
+/* Dropdown elements */
+.dropbtn-sub {
+    padding: 0;
+    margin: 0;
+}
+
+/* secondary sub drop-down div element */
+.dropdown-sub {
+    position: relative;
+    display: inline-block;
+}
+
+/* Sub drop-down content. Will be hidden until hover */
+.dropdown-sub-content {
+	cursor: pointer;
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    z-index: 1;
+}
+
+/* Style sub drop-down links*/
+.dropdown-sub-content a {
+	text-transform: uppercase;
+    color: var(--white-color);
+    margin: 16px 10px;
+    padding: 4px 0;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change drop-down links color on hover */
+.dropdown-sub-content a:hover {
+	color: var(--purple-color);
+	border-bottom: 1px solid var(--purple-color);
+}
+
+/* Show drop-down menu on hover */
+.dropdown-sub:hover .dropdown-sub-content {
+	display: block;
+}
+
+/*multimedia images per rubric*/
+/*Assign and display image for navigation and footer section*/
+.nav-img {
+	background-image: url("../img/woman_bath.jpg");
+	background-attachment: fixed;
+	/*set height of nav image*/
+	height: 600px; 
+	/*postion image*/
+	background-position: right bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    /*center contents of nav image*/
+    text-align: center; 
+}
+
+/*multimedia images per rubric*/
+/*Position images for banner images*/
+.index-back-img1,
+.index-back-img2,
+.index-back-img3,
+.about-back-img1,
+.about-back-img2,
+.about-back-img3,
+.contact-back-img1,
+.contact-back-img2,
+.sets-back-img1,
+.sets-back-img2,
+.sets-back-img3,
+.soaps-back-img1,
+.soaps-back-img2,
+.soaps-back-img3,
+.soaps-back-img4 {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border: 4px solid var(--purple-color);
+	min-height: 400px;
+	position: relative;
+}
+
+/*Assign banner images*/
+.index-back-img1 {
+	background-image: url("../img/flower_bath_blue.png");
+}
+
+.index-back-img2 {
+	background-image: url("../img/hands_paint_green.png");
+}
+
+.index-back-img3 {
+	background-image: url("../img/woman_sunrise_blue.png");
+}
+
+.about-back-img1 {
+	background-image: url("../img/cleaning_sink_white.png");
+}
+
+.about-back-img2 {
+	background-image: url("../img/wood_spoon_green.png");
+}
+
+.about-back-img3 {
+	background-image: url("../img/puddle_stomp_blue.png");
+}
+
+.contact-back-img1 {
+	background-image: url("../img/woman_sunrise_blue.png");
+}
+
+.contact-back-img2 {
+	background-image: url("../img/adventure_green.png");	
+}
+
+.sets-back-img1 {
+	background-image: url("../img/affection_bedroom_blue.png");
+}
+
+.sets-back-img2 {
+	background-image: url("../img/couple_nature_green.png");
+}
+
+.sets-back-img3 {
+	background-image: url("../img/fog_forest.jpg");
+}
+
+.soaps-back-img1 {
+	background-image: url("../img/soaps/rose_sunlight_blue.png");
+}
+
+.soaps-back-img2 {
+	background-image: url("../img/soaps/oat_lav_green.png");
+}
+
+.soaps-back-img3 {
+	background-image: url("../img/soaps/char_blue.png");
+}
+
+.soaps-back-img4 {
+	background-image: url("../img/soaps/soap_bars_white.png");
+}
+
+/*Position and format product summary tables*/
+.product-summary {
+	margin: auto;
+	text-align: center;
+}
+
+/*Set standard div section for product display on 
+soaps.html and sets.html*/
+.product-div{
+	background: var(--blue-light-color);
+	overflow: auto;
+	min-width: 600px;
+	max-width: 100%;
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+	border-left: 4px solid var(--purple-color);
+	border-right: 4px solid var(--purple-color);
+}
+
+/*Set div alt section for product display on 
+soaps.html and sets.html*/
+.product-div-alt {
+	background: var(--green-color);
+	min-width: 600px;
+	max-width: 100%;
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+	border-left: 4px solid var(--purple-color);
+	border-right: 4px solid var(--purple-color);
+}
+
+/*Position product image within product-div
+in soaps.html and sets.html*/
+.rose-product-img,
+.oatlav-product-img,
+.charcoal-product-img,
+.warmset-product-img,
+.coolset-product-img {
+	background-position: center center;
+ 	vertical-align: top;	
+  	box-sizing: border-box;
+	/*The default width of sections*/
+	width: 30%;
+	height: 400px;
+	min-width: 400px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	/*Adjust photo*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Assign product images*/
+.rose-product-img {
+	background-image: url("../img/soaps/rose_bars_small.jpg");
+}
+
+.oatlav-product-img {
+	background-image: url("../img/soaps/oat.jpg");
+}
+
+.charcoal-product-img {
+	background-image: url("../img/soaps/char_bars.jpg");
+}
+
+.warmset-product-img {
+	background-image: url("../img/soaps/gift_set2.jpg");
+}
+
+.coolset-product-img {
+	background-image: url("../img/soaps/gift_set1.jpg");
+}
+
+/*Postion the product description div in
+soaps.html and index.html*/
+.product-description-div {
+	vertical-align: top;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-align: left;
+	/*Default width of sections*/
+	width: 65%;
+	min-width: 400px;
+}
+
+/*Formating of h2 and p of product 
+description in soaps.html and sets.html*/
+.product-description-div h2,
+.product-description-div p {
+	margin: 34px;
+}
+
+/*Multiple options for banner body text areas*/
+.section {
+	text-align: center;
+	padding: 40px 60px;
+	border-left: 4px solid var(--purple-color);
+	border-right: 4px solid var(--purple-color);
+}
+
+.section-white {
+	background: var(--white-color);
+}
+
+.section-light {
+	background: var(--blue-light-color);
+}
+
+.section-dark {
+	background: var(--blue-dark-color);
+}
+
+.section-alt {
+	background: var(--green-color);
+}
+
+/*Banner bold text*/
+.back-text {
+	position: absolute;
+	font-weight: 900;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 37px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.contact-form-div {
+	background-color: var(--green-color);
+    border-radius: 2px;
+    padding: 20px;
+    width: 65%;
+    margin: auto;
+    min-width: 400px;
+}
+
+/*Custom paragraph style*/
+.para-text {
+	margin: 30px 0;
+}
+
+/*=========================================
+    ID Styles
+    =========================================*/
+
+/*Add bottom border to last banner body text section*/
+#end-section {
+	border-bottom: 4px solid var(--purple-color);
+}
+
+/*Style logo in navigation bar*/
+#logo {
+	background-position: center;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	width: 200px;
+	height: 200px;
+	margin: 0 10%;
+	border: 0;
+}
+
+/*Beauty ad video*/
+#ad-beauty {
+	padding-top: 20px;
+}
+
+/*Set height of input field*/
+#comments-questions {
+	height: 200px;
+}
+
+/*Adjust slogan text in footer section*/
+#slogan-text {
+	font-size: 14px;
+}
+
+/*Position and style the discover button
+On the index.html banner 1 section */
+#discover-button {
+	background-color: rgba(132, 15, 179, .7);
+	border: 1px solid var(--purple-color);
+	color: var(--white-color);
+	margin: 20px;
+	padding: 8px 44px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/*Centers the display of the link id within the window*/
+#purpose_link,
+#defense_link,
+#growth_link,
+#shea_rose_link,
+#oat_lavender_link,
+#charcoal_link {
+	position: relative;
+	padding-top: 20%;
+}
+
+/*Hide home from navbar until small screen size*/
+#nav-home {
+	display: none;
+}
+/*Hide menue icon until small screen size*/
+#menu-icon {
+	display: none;
+}
+
+/*=========================================
+    Screen Size With Max Width 960
+    =========================================*/
+@media screen and (max-width: 960px) {
+
+	/*Reduce margin on logo to fit smaller screen*/
+	#logo {
+		margin: 0 1%;
+	}
+}
+
+/*=========================================
+    Screen Size Over 800
+    =========================================*/
+@media screen and (min-width: 800px){
+	/*Necessary to reset main nav content display type on screen adjustment*/
+	.dropdown-main-content {
+		display: inline !important;
+	}
+}
+
+/*=========================================
+    Screen Size With Max Width 800
+    =========================================*/
+@media screen and (max-width: 800px){
+	/*Set fixed width for collapsed navbar*/
+	.navbar {
+		width: 200px;
+		height: 600px;
+		text-align: left;
+	}
+
+	/*Change display style nav elements*/
+	.dropdown-main {
+		display: block;
+	 	text-align: left;
+	}
+
+	.navbar li {
+		display: block;
+		margin: 0 0 0 20px;
+		padding: 16px;
+		font-weight: 500;
+	}
+
+	/*Adjust navbar links*/
+	.navbar li a {
+		display: block;
+		text-decoration: none;
+		margin: 0 10px 0 0; 
+		padding: 0 0; 
+	}
+
+	/*Hide navbar until onClick*/
+	.dropdown-main-content {
+	 	display: none;
+	}
+
+	/*Sub drop-down display */
+	.dropdown-sub {
+	    position: initial;
+	    display: initial;
+	}
+
+	/*Sub dropdown content display. Hidden until hover */
+	.dropdown-sub-content {
+	    display: none;
+	    position: initial;
+	    min-width: initial;
+	}
+
+	.dropdown-sub-content {
+		overflow: hidden;
+		max-height: 0;
+	}
+
+	.dropdown-sub-content a {
+		padding: 0 0 0 16px;
+		margin-left: 28px;
+	}
+
+	/*Show sub drop-down content on hover*/
+	.dropdown-sub:hover .dropdown-sub-content {
+		display: block;
+		max-height: 200px;
+	}
+
+	/*Display home element in nav menu*/
+	#nav-home {
+		display: block;
+	}
+
+	/*Hide logo from navigation menu*/
+	#logo {
+		display: none;
+	}
+
+	/*Postion menu icon*/
+	#menu-icon {
+		background-position: center;
+		background-repeat: no-repeat;
+	  	display: block;
+		vertical-align: middle;
+		width: 40px;
+		height: 40px;
+		margin: 34px 34px 0 34px; 
+	}
+}
+
+

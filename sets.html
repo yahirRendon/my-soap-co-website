@@ -1,0 +1,169 @@
+<!-- Sets Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Browser compat -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Website Title -->
+	<title>MY Soap Co.</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+  	<!-- [If lt IE 9]
+  		script src="//html5shiv.gogglecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to style.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<!-- Link to Roboto Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet"> 
+	<!-- Link to javascript line 1 -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+
+		<!-- Navigation Bar with Navigation Image and dropdown menus -->
+		<div class="nav-img">
+			<nav>
+				<ul class="navbar">
+					<div class="dropdown-main">
+						<a class="dropbtn-main" ><img id="menu-icon" onclick="showHideNav()" src="img/logo/menu_white.png"></a>
+						<div class="dropdown-main-content">
+							<li id="nav-home"><a  href="index.html">HOME</a></li>
+							<div class="dropdown-sub">
+								<li><a class="dropbtn-sub" href="soaps.html">SOAP</a></li>
+								<div class="dropdown-sub-content">
+									<a onclick="location.href='soaps.html#shea_rose_link'">ROSE</a>
+									<a onclick="location.href='soaps.html#oat_lavender_link'">LAVENDER</a>
+									<a onclick="location.href='soaps.html#charcoal_link'">CHARCOAL</a>
+								</div>
+							</div>
+							<li><a style="color: #840fb3;" href="sets.html">SETS</a></li>
+							<a class="logo-img" href="index.html"><img id="logo" src="img/logo/logo_three_purple.png"></a>
+							<div class="dropdown-sub">
+								<li><a class="dropbtn-sub" href="about.html">ABOUT</a></li>
+								<div class="dropdown-sub-content">
+									<a onclick="location.href='about.html#purpose_link'">PURPOSE</a>
+									<a onclick="location.href='about.html#defense_link'">DEFENSE</a>
+									<a onclick="location.href='about.html#growth_link'">GROWTH</a>
+								</div>
+							</div>
+							<li><a href="contact.html">CONTACT</a></li>
+						</div>
+					</div>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Banner Image 1 with Bold Text-->
+	<div class="sets-back-img1">
+		<div class="back-text">
+			<span class="border">
+				<a id="gift_cool_link">gift set -cool</a>
+			</span>
+		</div>
+	</div>
+
+	<!-- Banner Body Text 1 -->
+	<section class="product-div">
+		<!-- holds product image -->
+		<div class="coolset-product-img"></div> 
+		<!-- Shea Rose Set Info -->
+		<div class="product-description-div">
+			<h2>Description:</h2>
+			<p>
+				Our Cool Gift Set captures the scent of a fresh breeze and all products are formulated with this feeling in mind. The set contains our Shea Rose Soap with a hint of ocean breeze, our Rose Organic Sugar Scrub, and Rose Mango Body Butter. These products contain all the benefits of the Rose Essential Oil in various formulations to give yourself the gift of a cool and clam summer breeze.  
+			</p>
+			<h2>Ingredients:</h2>
+			<p>
+				Olive Oil Pomace, Shea Butter, Castor Oil, Distilled Water, Mango Butter, Organic Sugar, Hazelnut Oil, and Rose Essential Oil
+			</p>
+		</div>
+	</section>
+
+	<!-- Banner Image 2 with Bold Text-->
+	<div class="sets-back-img2">
+		<div class="back-text">
+			<span class="border">
+				<a id="gift_warm_link">gift set -warm</a>
+			</span>
+		</div>
+	</div>
+
+	<!-- Banner Body Text 2 -->
+	<section class="product-div-alt">
+		<!-- holds product image -->
+		<div class="warmset-product-img"></div> 
+		<!-- Oat Lavender Set Info -->
+		<div class="product-description-div">
+			<h2>Description:</h2>
+			<p>
+				Our Warm Gift Set is designed to deliver the warmth and soothing benefits of our Lavender Oat formulation. The set contains our Lavender Oat Soap, our Lavender Oat Sugar Scrub, and Cacao Oat Body Butter. These products contain all the benefits of Lavender and Oat in various formulations to deliver warmth and calmness. 
+			</p>
+			<h2>Ingredients:</h2>
+			<p>
+				Olive Oil Pomace, Shea Butter, Castor Oil, Distilled Water, Bentonite Clay, Cacao Butter, Organic Sugar, Hazelnut Oil, and Lavender Essential Oil, Colloidal Oatmeal
+			</p>
+		</div>
+	</section>
+
+	<!-- Banner Image 3 with Bold Text -->
+	<div class="sets-back-img3">
+		<div class="back-text">
+			<span class="border">
+				<a id="product_summary_link">Find Your Set</a>
+			</span>
+		</div>
+	</div>
+
+	<!-- Banner Body Text 3 -->
+	<section id="end-section" class="section section-white">
+		<!-- Table with product summary details-->
+		<!-- Use of table per rubric -->
+		<table cellpadding="12px" cellspacing="18px" class="product-summary" summary="Gift Summary List">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Cool Set</th>
+					<th>Warm Set</th>
+				</tr>
+			</thead>
+			<tfoot>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th>Use:</th>
+					<td>Ideal for summer and for those with oily or sensitive skin</td>
+					<td>Ideal for winter and for those with dry to normal skin</td>
+
+				</tr>
+				<tr>
+					<th>Key<br>Ingredients:</th>
+					<td>Rose Essential Oil, Mango Butter, Organic Sugar</td>
+					<td>Lavender Essential Oil, Colloidal Oatmeal, Cacao Butter, Organic Sugar</td>
+				</tr>
+				<tr>
+					<th>Price:</th>
+					<td>$24.99</td>
+					<td>$19.99</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<!-- Footer Section with Image and Bold Text -->
+	<footer class="nav-img">
+		<div class="back-text">
+			<span class="border">
+				MY Soap Co.
+				<p id="slogan-text">life done well is dirty</p>
+			</span>
+		</div>
+	</footer>
+
+</body>
+</html>
+
